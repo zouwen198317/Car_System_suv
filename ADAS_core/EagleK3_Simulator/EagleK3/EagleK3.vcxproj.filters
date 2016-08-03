@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\alCommon">
+      <UniqueIdentifier>{b8c26682-f127-44ce-83e5-8ffe48ca82c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alHexData">
+      <UniqueIdentifier>{606bef10-4f94-4e19-bb50-a530360dc1b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alINI">
+      <UniqueIdentifier>{46fc0529-92f5-47e8-a1b1-6320d9e3105f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alLevMar">
+      <UniqueIdentifier>{c57b61d6-afbe-4888-a68e-2615db4f37e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alLineSegDetect">
+      <UniqueIdentifier>{28fab730-d50b-4593-b7ee-9095e8335a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alMath">
+      <UniqueIdentifier>{910a98b9-5fdd-474d-921e-016337121c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alALLEYVIEW">
+      <UniqueIdentifier>{1a217b24-4d97-4875-8d05-e7e18e416f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alAVM2D">
+      <UniqueIdentifier>{f5520f20-041d-4530-9391-e89f607f5dd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alAVM3D">
+      <UniqueIdentifier>{bce5e6cd-68a0-49e9-9d90-ba8c8b14a8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alFACTORY_AUTOK">
+      <UniqueIdentifier>{d96fbbfc-cd44-4a0c-98b9-db36d3ef790c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alMANUALK">
+      <UniqueIdentifier>{28690f4a-4b1f-40d0-a027-389ffc494b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alTRAILLINE">
+      <UniqueIdentifier>{186e3289-9790-4d3e-b554-26634399ea51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alCore">
+      <UniqueIdentifier>{fe57207b-0a49-48dc-8689-6f8344b6e08e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alCommon">
+      <UniqueIdentifier>{f2d8338f-4e92-45a1-9061-17fc0ed78bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alHexData">
+      <UniqueIdentifier>{dc566914-7114-494c-a433-b9f50522a774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alINI">
+      <UniqueIdentifier>{7d2bb2d2-0afe-41a6-93c7-fba6dca8305e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alLevMar">
+      <UniqueIdentifier>{4278cf16-75e9-4e8c-b85d-b9f2df9e9ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alLineSegDetect">
+      <UniqueIdentifier>{5b9de371-c912-40be-9f0e-55407cbcac19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alMath">
+      <UniqueIdentifier>{b53c2edf-55fc-4e47-abf8-7f66a03f4354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alALLEYVIEW">
+      <UniqueIdentifier>{1e050e40-f338-4375-98fd-3e14642251e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alAVM2D">
+      <UniqueIdentifier>{ac0bd97c-8e20-4894-834c-b5eec1b50866}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alAVM3D">
+      <UniqueIdentifier>{83faed57-28ea-4192-acc5-ea76497998ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alFACTORY_AUTOK">
+      <UniqueIdentifier>{1606365c-1d6d-4887-8bc0-2723a497e302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alMANUALK">
+      <UniqueIdentifier>{cca5edc0-e37b-485f-8a7a-55ee45455faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alTRAILLINE">
+      <UniqueIdentifier>{6a02d557-a7f1-490d-bb8b-e38ed99dc480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alCore">
+      <UniqueIdentifier>{b4bc4ed1-ce25-47ef-893e-351834c8c052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alGAE_AVM">
+      <UniqueIdentifier>{9dece2ce-e94c-406e-a8d2-15957385032f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alGAE_AVM">
+      <UniqueIdentifier>{5d2b206d-a31e-4d7c-9abe-039fd04f3fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Statistic">
+      <UniqueIdentifier>{46d78711-6357-4d40-bf0b-bd7e50a56764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PortingLayer">
+      <UniqueIdentifier>{0bc52501-229c-464a-95d4-df7eb75e373d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PortingLayer">
+      <UniqueIdentifier>{a822d2ac-1746-46e1-a0f4-83db91e289de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alLDCK">
+      <UniqueIdentifier>{4b7d75b5-61cf-4a52-a44a-2565928ad619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alLDCK">
+      <UniqueIdentifier>{37905b0b-0fab-4517-aa63-a5fe08cf624c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alFM_v2_1">
+      <UniqueIdentifier>{31b05499-f57d-4d97-b4e1-7c180d7f52e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alStatistic">
+      <UniqueIdentifier>{d89c113b-eb2b-431f-9f80-98552309614d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alLUT_v2">
+      <UniqueIdentifier>{7d360327-ac7c-481e-8d47-4fdb9dd2e18e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alLUT_v2">
+      <UniqueIdentifier>{2217641e-1434-460b-aa53-c163c70e82c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alFM_v2_1">
+      <UniqueIdentifier>{41944ee4-65f6-45f7-a532-6ff0d7ba1da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alCommonK">
+      <UniqueIdentifier>{95146b00-2394-4404-b564-b1080a1abd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alCommonK">
+      <UniqueIdentifier>{327b3b2a-4f59-4b5d-8e5b-3b318909acc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\alHexCoder">
+      <UniqueIdentifier>{4908faa3-38e4-40de-b4e3-5a2ececd3566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\alHexCoder">
+      <UniqueIdentifier>{524fab65-4155-4a43-ba5b-0962ee6de3ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\alCommon\inc\alCameraInfo.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\alCarInfo.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\alCarSizeInfo.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\alLaneInfo.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\alTimelog.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\atype.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\basedef.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommon\inc\mtype.h">
+      <Filter>Header Files\alCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alHexData\inc\alHexData.h">
+      <Filter>Header Files\alHexData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alINI\inc\alINI.h">
+      <Filter>Header Files\alINI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alMath\inc\alMath.h">
+      <Filter>Header Files\alMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alMath\inc\alMatrix.h">
+      <Filter>Header Files\alMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\alMANUALK\alMANUALK.h">
+      <Filter>Header Files\alMANUALK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\alMANUALK\alMANUALK_CalRefData.h">
+      <Filter>Header Files\alMANUALK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\alMANUALK\alMANUALK_Def.h">
+      <Filter>Header Files\alMANUALK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\compiler.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\lapacke.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\lapacke_config.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\lapacke_mangling.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\lapacke_utils.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\levmar.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\lm.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLevMar\inc\misc.h">
+      <Filter>Header Files\alLevMar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\EagleK3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLineSegDetect\inc\lsd.h">
+      <Filter>Header Files\alLineSegDetect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\EagleK3_Def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\BVCAM_FACAUTOK.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\BVCAM_FACAUTOK_DeBug.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\BVCAM_FACAUTOK_Def.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CrossMarkK.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CrossMarkK_Def.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CRSMRKDET.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CRSMRKDET_Def.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\RectK.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\RectK_Def.h">
+      <Filter>Header Files\alFACTORY_AUTOK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PortingLayer\ImageProc.h">
+      <Filter>Header Files\PortingLayer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_Def.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_Default.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_FCWDemo.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_Sparrow90.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_Sparrow144.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_Sparrow190.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_Curve1.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_Curve2.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_Curve3.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_NoFisheye.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_NoFisheye2.h">
+      <Filter>Header Files\alFM_v2_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAlleyView\inc\alAlleyViewDef.h">
+      <Filter>Header Files\alALLEYVIEW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAlleyView\inc\alAlleyViewK.h">
+      <Filter>Header Files\alALLEYVIEW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAlleyView\inc\alAlleyViewM33Generator.h">
+      <Filter>Header Files\alALLEYVIEW</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM2D\inc\alAVM2DDef.h">
+      <Filter>Header Files\alAVM2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM2D\inc\alAVM2DK.h">
+      <Filter>Header Files\alAVM2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM2D\inc\alAVM2DKOverlaping.h">
+      <Filter>Header Files\alAVM2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alGAE_AVM\inc\alGAE_AVM.h">
+      <Filter>Header Files\alGAE_AVM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alGAE_AVM\inc\alGAE_AVM_Def.h">
+      <Filter>Header Files\alGAE_AVM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLDCK\inc\alLDCK.h">
+      <Filter>Header Files\alLDCK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alLDCK\inc\alLDCK_Def.h">
+      <Filter>Header Files\alLDCK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTRAILLINE\inc\alTRAILLINE.h">
+      <Filter>Header Files\alTRAILLINE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTRAILLINE\inc\alTRAILLINE_Def.h">
+      <Filter>Header Files\alTRAILLINE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTRAILLINE\inc\alTRAILLINE_GenBat.h">
+      <Filter>Header Files\alTRAILLINE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alStatistic\inc\alStatistic_BirdView.h">
+      <Filter>Header Files\alStatistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alStatistic\inc\alStatistic_Def.h">
+      <Filter>Header Files\alStatistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alStatistic\inc\alStatistic_SingleView.h">
+      <Filter>Header Files\alStatistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTableLU\inc\alLUT_v2.h">
+      <Filter>Header Files\alLUT_v2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTableLU\inc\alLUT_v2_Def.h">
+      <Filter>Header Files\alLUT_v2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTableLU\inc\alPartLUT_v1.h">
+      <Filter>Header Files\alLUT_v2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTableLU\inc\alPartLUT_v1_Def.h">
+      <Filter>Header Files\alLUT_v2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alTableLU\inc\alPartLUT_v2.h">
+      <Filter>Header Files\alLUT_v2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DDef.h">
+      <Filter>Header Files\alAVM3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DK.h">
+      <Filter>Header Files\alAVM3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DKOverlaping.h">
+      <Filter>Header Files\alAVM3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DKProjection.h">
+      <Filter>Header Files\alAVM3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DM33Generation.h">
+      <Filter>Header Files\alAVM3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\eagleK3\inc\Core\alErrorCode.h">
+      <Filter>Header Files\alCore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommonK\inc\CommonK.h">
+      <Filter>Header Files\alCommonK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alCommonK\inc\CommonK_Def.h">
+      <Filter>Header Files\alCommonK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alHexCoder\inc\alHexCoder.h">
+      <Filter>Header Files\alHexCoder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\alCommon\src\alTimeLog.c">
+      <Filter>Source Files\alCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alCommon\src\atype.c">
+      <Filter>Source Files\alCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alHexData\src\alHexData.c">
+      <Filter>Source Files\alHexData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alHexData\src\alHexData_test.c">
+      <Filter>Source Files\alHexData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alINI\src\alINI.c">
+      <Filter>Source Files\alINI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alMath\src\alMatrix.c">
+      <Filter>Source Files\alMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\alMANUALK\alMANUALK.c">
+      <Filter>Source Files\alMANUALK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\alMANUALK\alMANUALK_CalRefData.c">
+      <Filter>Source Files\alMANUALK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\alMANUALK\alMANUALK_Def.c">
+      <Filter>Source Files\alMANUALK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\Axb.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\lm.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\lmbc.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\lmblec.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\lmbleic.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\lmdemo.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\lmlec.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLevMar\src\misc.c">
+      <Filter>Source Files\alLevMar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\EagleK3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLineSegDetect\src\lsd.c">
+      <Filter>Source Files\alLineSegDetect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\EagleK3_Def.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\BVCAM_FACAUTOK.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\BVCAM_FACAUTOK_Def.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\CrossMarkK.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\CrossMarkK_Def.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\CRSMRKDET.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\RectK.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\RectK_Def.c">
+      <Filter>Source Files\alFACTORY_AUTOK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_3x3Convolution.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_5x5Convolution.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_7x7Convolution.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_11x11Convolution.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_NoiseEstimation.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_QuarterDownScaling.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_QuarterDownScalingSmooth.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_ROIMean.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_Sharpen.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PortingLayer\ImgProc_YUVTransform.c">
+      <Filter>Source Files\PortingLayer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_Def.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_Default.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_FCWDemo.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_Sparrow90.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_Sparrow144.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_Sparrow190.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_Curve1.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_Curve2.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_Curve3.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_NoFisheye.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_NoFisheye2.c">
+      <Filter>Source Files\alFM_v2_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAlleyView\src\alAlleyViewDef.c">
+      <Filter>Source Files\alALLEYVIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAlleyView\src\alAlleyViewK.c">
+      <Filter>Source Files\alALLEYVIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAlleyView\src\alAlleyViewM33Generator.c">
+      <Filter>Source Files\alALLEYVIEW</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM2D\src\alAVM2DDef.c">
+      <Filter>Source Files\alAVM2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM2D\src\alAVM2DK.c">
+      <Filter>Source Files\alAVM2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM2D\src\alAVM2DKOverlap.c">
+      <Filter>Source Files\alAVM2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alGAE_AVM\src\alGAE_AVM.c">
+      <Filter>Source Files\alGAE_AVM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLDCK\src\alLDCK.c">
+      <Filter>Source Files\alLDCK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alLDCK\src\alLDCK_Def.c">
+      <Filter>Source Files\alLDCK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alTRAILLINE\src\alTRAILLINE.c">
+      <Filter>Source Files\alTRAILLINE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alTRAILLINE\src\alTRAILLINE_Def.c">
+      <Filter>Source Files\alTRAILLINE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alTRAILLINE\src\alTRAILLINE_GenBat.c">
+      <Filter>Source Files\alTRAILLINE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alStatistic\src\alStatistic_BirdView.c">
+      <Filter>Source Files\Statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alStatistic\src\alStatistic_Def.c">
+      <Filter>Source Files\Statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alStatistic\src\alStatistic_SingleView.c">
+      <Filter>Source Files\Statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alTableLU\src\alLUT_v2.c">
+      <Filter>Source Files\alLUT_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alTableLU\src\alPartLUT_v1.c">
+      <Filter>Source Files\alLUT_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alTableLU\src\alPartLUT_v2.c">
+      <Filter>Source Files\alLUT_v2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DDef.c">
+      <Filter>Source Files\alAVM3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DK.c">
+      <Filter>Source Files\alAVM3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DKOverlap.c">
+      <Filter>Source Files\alAVM3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DKProjection.c">
+      <Filter>Source Files\alAVM3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DM33Generation.c">
+      <Filter>Source Files\alAVM3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\Core\alErrorCode.c">
+      <Filter>Source Files\alCore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alCommonK\src\CommonK.c">
+      <Filter>Source Files\alCommonK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alCommonK\src\CommonK_Def.c">
+      <Filter>Source Files\alCommonK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alHexCoder\src\alHexCoder.c">
+      <Filter>Source Files\alHexCoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

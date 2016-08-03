@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB4B4C98-BECF-4B38-BA9A-1A3A83A8AA3D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EagleK3</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ExcludePath>$(ExcludePath)</ExcludePath>
+    <LibraryPath>$(OPENCV_DIR)\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(OPENCV_DIR)\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(OPENCV_DIR)\include\opencv2;$(OPENCV_DIR)\include\opencv;$(OPENCV_DIR)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(OPENCV_DIR)\lib;$(LibraryPath)</LibraryPath>
+    <ExcludePath>$(ExcludePath)</ExcludePath>
+    <ExecutablePath>$(OPENCV_DIR)\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(OPENCV_DIR)\include\opencv2;$(OPENCV_DIR)\include\opencv;$(OPENCV_DIR)\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../../alTILib/include;../../PortingLayer;../../alStatistic/inc;../../alGAE_AVM/inc;../../alLineSegDetect/inc;../../alLevMar/inc;../../alCommonK/inc;../../alCommon/inc;../../alHexCoder/inc;../../alLDCK/inc;../../alFM_v2_1/inc;../../alHexData/inc;../../alINI/inc;../../alMath/inc;../../eagleK3/inc/;../../eagleK3/inc/Core;../../eagleK3/inc/alMANUALK;../../alAlleyView/inc;../../alTRAILLINE/inc;../../alAVM3D/inc;../../alAVM2D/inc;../../alTableLU/inc;../../eagleK3/inc/BVCAM_FACAUTOK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../../alTILib/include;../../PortingLayer;../../alStatistic/inc;../../alGAE_AVM/inc;../../alLineSegDetect/inc;../../alLevMar/inc;../../alCommonK/inc;../../alCommon/inc;../../alHexCoder/inc;../../alLDCK/inc;../../alFM_v2_1/inc;../../alHexData/inc;../../alINI/inc;../../alMath/inc;../../eagleK3/inc/;../../eagleK3/inc/Core;../../eagleK3/inc/alMANUALK;../../alAlleyView/inc;../../alTRAILLINE/inc;../../alAVM3D/inc;../../alAVM2D/inc;../../alTableLU/inc;../../eagleK3/inc/BVCAM_FACAUTOK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\alAlleyView\inc\alAlleyViewDef.h" />
+    <ClInclude Include="..\..\alAlleyView\inc\alAlleyViewK.h" />
+    <ClInclude Include="..\..\alAlleyView\inc\alAlleyViewM33Generator.h" />
+    <ClInclude Include="..\..\alAVM2D\inc\alAVM2DDef.h" />
+    <ClInclude Include="..\..\alAVM2D\inc\alAVM2DK.h" />
+    <ClInclude Include="..\..\alAVM2D\inc\alAVM2DKOverlaping.h" />
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DDef.h" />
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DK.h" />
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DKOverlaping.h" />
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DKProjection.h" />
+    <ClInclude Include="..\..\alAVM3D\inc\AVM3DM33Generation.h" />
+    <ClInclude Include="..\..\alCommonK\inc\CommonK.h" />
+    <ClInclude Include="..\..\alCommonK\inc\CommonK_Def.h" />
+    <ClInclude Include="..\..\alCommon\inc\alCameraInfo.h" />
+    <ClInclude Include="..\..\alCommon\inc\alCarInfo.h" />
+    <ClInclude Include="..\..\alCommon\inc\alCarSizeInfo.h" />
+    <ClInclude Include="..\..\alCommon\inc\alLaneInfo.h" />
+    <ClInclude Include="..\..\alCommon\inc\alTimelog.h" />
+    <ClInclude Include="..\..\alCommon\inc\atype.h" />
+    <ClInclude Include="..\..\alCommon\inc\basedef.h" />
+    <ClInclude Include="..\..\alCommon\inc\mtype.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_Def.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_Default.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_FCWDemo.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_Sparrow144.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_Sparrow190.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_Sparrow90.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_Curve1.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_Curve2.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_Curve3.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_NoFisheye.h" />
+    <ClInclude Include="..\..\alFM_v2_1\inc\alFM_v2_1_DistortionCurve_VC_NoFisheye2.h" />
+    <ClInclude Include="..\..\alGAE_AVM\inc\alGAE_AVM.h" />
+    <ClInclude Include="..\..\alGAE_AVM\inc\alGAE_AVM_Def.h" />
+    <ClInclude Include="..\..\alHexCoder\inc\alHexCoder.h" />
+    <ClInclude Include="..\..\alHexData\inc\alHexData.h" />
+    <ClInclude Include="..\..\alINI\inc\alINI.h" />
+    <ClInclude Include="..\..\alLDCK\inc\alLDCK.h" />
+    <ClInclude Include="..\..\alLDCK\inc\alLDCK_Def.h" />
+    <ClInclude Include="..\..\alLevMar\inc\compiler.h" />
+    <ClInclude Include="..\..\alLevMar\inc\lapacke.h" />
+    <ClInclude Include="..\..\alLevMar\inc\lapacke_config.h" />
+    <ClInclude Include="..\..\alLevMar\inc\lapacke_mangling.h" />
+    <ClInclude Include="..\..\alLevMar\inc\lapacke_utils.h" />
+    <ClInclude Include="..\..\alLevMar\inc\levmar.h" />
+    <ClInclude Include="..\..\alLevMar\inc\lm.h" />
+    <ClInclude Include="..\..\alLevMar\inc\misc.h" />
+    <ClInclude Include="..\..\alLineSegDetect\inc\lsd.h" />
+    <ClInclude Include="..\..\alMath\inc\alMath.h" />
+    <ClInclude Include="..\..\alMath\inc\alMatrix.h" />
+    <ClInclude Include="..\..\alStatistic\inc\alStatistic_BirdView.h" />
+    <ClInclude Include="..\..\alStatistic\inc\alStatistic_Def.h" />
+    <ClInclude Include="..\..\alStatistic\inc\alStatistic_SingleView.h" />
+    <ClInclude Include="..\..\alTableLU\inc\alLUT_v2.h" />
+    <ClInclude Include="..\..\alTableLU\inc\alLUT_v2_Def.h" />
+    <ClInclude Include="..\..\alTableLU\inc\alPartLUT_v1.h" />
+    <ClInclude Include="..\..\alTableLU\inc\alPartLUT_v1_Def.h" />
+    <ClInclude Include="..\..\alTableLU\inc\alPartLUT_v2.h" />
+    <ClInclude Include="..\..\alTRAILLINE\inc\alTRAILLINE.h" />
+    <ClInclude Include="..\..\alTRAILLINE\inc\alTRAILLINE_Def.h" />
+    <ClInclude Include="..\..\alTRAILLINE\inc\alTRAILLINE_GenBat.h" />
+    <ClInclude Include="..\..\eagleK3\inc\alMANUALK\alMANUALK.h" />
+    <ClInclude Include="..\..\eagleK3\inc\alMANUALK\alMANUALK_CalRefData.h" />
+    <ClInclude Include="..\..\eagleK3\inc\alMANUALK\alMANUALK_Def.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\BVCAM_FACAUTOK.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\BVCAM_FACAUTOK_DeBug.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\BVCAM_FACAUTOK_Def.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CrossMarkK.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CrossMarkK_Def.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CRSMRKDET.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\CRSMRKDET_Def.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\RectK.h" />
+    <ClInclude Include="..\..\eagleK3\inc\BVCAM_FACAUTOK\RectK_Def.h" />
+    <ClInclude Include="..\..\eagleK3\inc\Core\alErrorCode.h" />
+    <ClInclude Include="..\..\eagleK3\inc\EagleK3.h" />
+    <ClInclude Include="..\..\eagleK3\inc\EagleK3_Def.h" />
+    <ClInclude Include="..\..\PortingLayer\ImageProc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\alAlleyView\src\alAlleyViewDef.c" />
+    <ClCompile Include="..\..\alAlleyView\src\alAlleyViewK.c" />
+    <ClCompile Include="..\..\alAlleyView\src\alAlleyViewM33Generator.c" />
+    <ClCompile Include="..\..\alAVM2D\src\alAVM2DDef.c" />
+    <ClCompile Include="..\..\alAVM2D\src\alAVM2DK.c" />
+    <ClCompile Include="..\..\alAVM2D\src\alAVM2DKOverlap.c" />
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DDef.c" />
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DK.c" />
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DKOverlap.c" />
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DKProjection.c" />
+    <ClCompile Include="..\..\alAVM3D\src\AVM3DM33Generation.c" />
+    <ClCompile Include="..\..\alCommonK\src\CommonK.c" />
+    <ClCompile Include="..\..\alCommonK\src\CommonK_Def.c" />
+    <ClCompile Include="..\..\alCommon\src\alTimeLog.c" />
+    <ClCompile Include="..\..\alCommon\src\atype.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_Def.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_Default.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_FCWDemo.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_Sparrow144.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_Sparrow190.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_Sparrow90.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_Curve1.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_Curve2.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_Curve3.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_NoFisheye.c" />
+    <ClCompile Include="..\..\alFM_v2_1\src\alFM_v2_1_DistortionCurve_VC_NoFisheye2.c" />
+    <ClCompile Include="..\..\alGAE_AVM\src\alGAE_AVM.c" />
+    <ClCompile Include="..\..\alHexCoder\src\alHexCoder.c" />
+    <ClCompile Include="..\..\alHexData\src\alHexData.c" />
+    <ClCompile Include="..\..\alHexData\src\alHexData_test.c" />
+    <ClCompile Include="..\..\alINI\src\alINI.c" />
+    <ClCompile Include="..\..\alLDCK\src\alLDCK.c" />
+    <ClCompile Include="..\..\alLDCK\src\alLDCK_Def.c" />
+    <ClCompile Include="..\..\alLevMar\src\Axb.c" />
+    <ClCompile Include="..\..\alLevMar\src\lm.c" />
+    <ClCompile Include="..\..\alLevMar\src\lmbc.c" />
+    <ClCompile Include="..\..\alLevMar\src\lmblec.c" />
+    <ClCompile Include="..\..\alLevMar\src\lmbleic.c" />
+    <ClCompile Include="..\..\alLevMar\src\lmdemo.c" />
+    <ClCompile Include="..\..\alLevMar\src\lmlec.c" />
+    <ClCompile Include="..\..\alLevMar\src\misc.c" />
+    <ClCompile Include="..\..\alLineSegDetect\src\lsd.c" />
+    <ClCompile Include="..\..\alMath\src\alMatrix.c" />
+    <ClCompile Include="..\..\alStatistic\src\alStatistic_BirdView.c" />
+    <ClCompile Include="..\..\alStatistic\src\alStatistic_Def.c" />
+    <ClCompile Include="..\..\alStatistic\src\alStatistic_SingleView.c" />
+    <ClCompile Include="..\..\alTableLU\src\alLUT_v2.c" />
+    <ClCompile Include="..\..\alTableLU\src\alPartLUT_v1.c" />
+    <ClCompile Include="..\..\alTableLU\src\alPartLUT_v2.c" />
+    <ClCompile Include="..\..\alTRAILLINE\src\alTRAILLINE.c" />
+    <ClCompile Include="..\..\alTRAILLINE\src\alTRAILLINE_Def.c" />
+    <ClCompile Include="..\..\alTRAILLINE\src\alTRAILLINE_GenBat.c" />
+    <ClCompile Include="..\..\eagleK3\src\alMANUALK\alMANUALK.c" />
+    <ClCompile Include="..\..\eagleK3\src\alMANUALK\alMANUALK_CalRefData.c" />
+    <ClCompile Include="..\..\eagleK3\src\alMANUALK\alMANUALK_Def.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\BVCAM_FACAUTOK.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\BVCAM_FACAUTOK_Def.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\CrossMarkK.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\CrossMarkK_Def.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\CRSMRKDET.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\RectK.c" />
+    <ClCompile Include="..\..\eagleK3\src\BVCAM_FACAUTOK\RectK_Def.c" />
+    <ClCompile Include="..\..\eagleK3\src\Core\alErrorCode.c" />
+    <ClCompile Include="..\..\eagleK3\src\EagleK3.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\eagleK3\src\EagleK3_Def.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_11x11Convolution.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_3x3Convolution.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_5x5Convolution.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_7x7Convolution.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_NoiseEstimation.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_QuarterDownScaling.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_QuarterDownScalingSmooth.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_ROIMean.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_Sharpen.c" />
+    <ClCompile Include="..\..\PortingLayer\ImgProc_YUVTransform.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -27,3 +27,28 @@
 *.exe
 *.out
 *.app
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+
+
+# Visual C++ Log files
+*.log
+*.tlog
+*.idb
+*.ilk
+*.pdb
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# other
+*.jpg
+*.xls
+*.xlsx

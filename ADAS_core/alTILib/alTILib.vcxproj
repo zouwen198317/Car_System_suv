@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D1AB992F-5013-4982-BA77-80BC423FE812}</ProjectGuid>
+    <RootNamespace>alTICModel</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;include/imglib;include/vlib;include/iqmath;include/dsplib;include/c6xsim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>include;include/imglib;include/vlib;include/iqmath;include/dsplib;include/c6xsim;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alTILibDef.c" />
+    <ClCompile Include="src\c6xsim\c66_ag_intrins.c" />
+    <ClCompile Include="src\c6xsim\c66_data_sim.c" />
+    <ClCompile Include="src\c6xsim\C6xSimulator.c" />
+    <ClCompile Include="src\dat_copy.c" />
+    <ClCompile Include="src\dsplib\DSPF_blk_eswap16_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_blk_eswap32_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_blk_eswap64_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_fltoq15_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_q15tofl_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_autocor_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_biquad_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_bitrev_cplx_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_blk_move_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_cfftr2_dit_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_cfftr4_dif_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_convol_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_dotprod_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_dotp_cplx_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_fftSPxSP_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_fircirc_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_fir_cplx_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_fir_gen_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_fir_r2_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_icfftr2_dif_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_ifftSPxSP_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_iirlat_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_iir_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_lms_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_mat_mul_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_mat_mul_cplx_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_mat_trans_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_maxidx_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_maxval_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_minerr_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_minval_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_vecmul_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_vecrecip_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_vecsum_sq_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_sp_w_vec_cn.c" />
+    <ClCompile Include="src\dsplib\DSPF_util.c" />
+    <ClCompile Include="src\imglib\IMG_conv_3x3_i8_c16s_altek.c" />
+    <ClCompile Include="src\imglib\IMG_conv_3x3_i8_c8_altek.c" />
+    <ClCompile Include="src\imglib\IMG_conv_3x3_i8_c8_altek_cn.c" />
+    <ClCompile Include="src\imglib\IMG_sobel_3x3_i8_c16_cn.c" />
+    <ClCompile Include="src\IMG_add_8.c" />
+    <ClCompile Include="src\VisionMeIntrinsic.c" />
+    <ClCompile Include="src\VLIB_convertUYVYsemipl_to_YUVpl.c" />
+    <ClCompile Include="src\VLIB_convertYUYVint_to_YUVpl.c" />
+    <ClCompile Include="src\VLIB_convertYUYVpl_to_YUVint.c" />
+    <ClCompile Include="src\VLIB_extractLumaFromYUYV.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\alTILibDef.h" />
+    <ClInclude Include="include\c6xsim\c66_ag_intrins.h" />
+    <ClInclude Include="include\c6xsim\c66_conversion_macros.h" />
+    <ClInclude Include="include\c6xsim\c66_data_sim.h" />
+    <ClInclude Include="include\c6xsim\C6xSimulator.h" />
+    <ClInclude Include="include\c6xsim\C6xSimulator_base_types.h" />
+    <ClInclude Include="include\c6xsim\C6xSimulator_type_modifiers.h" />
+    <ClInclude Include="include\c6xsim\global.h" />
+    <ClInclude Include="include\c6xsim\_C6xSimulator_priv.h" />
+    <ClInclude Include="include\dat_copy.h" />
+    <ClInclude Include="include\DSPLib.h" />
+    <ClInclude Include="include\dsplib\DSPF_blk_eswap16_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_blk_eswap32_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_blk_eswap64_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_fltoq15_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_q15tofl_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_autocor_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_biquad_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_bitrev_cplx_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_blk_move_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_cfftr2_dit_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_cfftr4_dif_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_convol_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_dotprod_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_dotp_cplx_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_fftSPxSP_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_fircirc_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_fir_cplx_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_fir_gen_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_fir_r2_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_icfftr2_dif_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_ifftSPxSP_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_iirlat_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_iir_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_lms_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_mat_mul_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_mat_mul_cplx_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_mat_trans_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_maxidx_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_maxval_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_minerr_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_minval_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_vecmul_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_vecrecip_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_vecsum_sq_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_sp_w_vec_cn.h" />
+    <ClInclude Include="include\dsplib\DSPF_util.h" />
+    <ClInclude Include="include\IMGLib.h" />
+    <ClInclude Include="include\IQMathLib.h" />
+    <ClInclude Include="include\VisionMeIntrinsic.h" />
+    <ClInclude Include="include\VLib.h" />
+    <ClInclude Include="include\vlib\VLIB_prototypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="obj\dsp\avmblob.obj" />
+    <Object Include="obj\dsp\avmframe.obj" />
+    <Object Include="obj\dsp\avminterval.obj" />
+    <Object Include="obj\dsp\avmintervalimage.obj" />
+    <Object Include="obj\dsp\avmobject.obj" />
+    <Object Include="obj\dsp\avmtypes.obj" />
+    <Object Include="obj\dsp\avm_rlerow.obj" />
+    <Object Include="obj\dsp\bitrev.obj" />
+    <Object Include="obj\dsp\matrixinverse_4x4.obj" />
+    <Object Include="obj\dsp\nclist.obj" />
+    <Object Include="obj\iqmath\atoIQN.obj" />
+    <Object Include="obj\iqmath\FtoIQ.obj" />
+    <Object Include="obj\iqmath\IQmathTables.obj" />
+    <Object Include="obj\iqmath\IQNabs.obj" />
+    <Object Include="obj\iqmath\IQNacos.obj" />
+    <Object Include="obj\iqmath\IQNasin.obj" />
+    <Object Include="obj\iqmath\IQNatan2.obj" />
+    <Object Include="obj\iqmath\IQNatan2PU.obj" />
+    <Object Include="obj\iqmath\IQNcos.obj" />
+    <Object Include="obj\iqmath\IQNcosPU.obj" />
+    <Object Include="obj\iqmath\IQNdiv.obj" />
+    <Object Include="obj\iqmath\IQNexp.obj" />
+    <Object Include="obj\iqmath\IQNfrac.obj" />
+    <Object Include="obj\iqmath\IQNint.obj" />
+    <Object Include="obj\iqmath\IQNisqrt.obj" />
+    <Object Include="obj\iqmath\IQNlog.obj" />
+    <Object Include="obj\iqmath\IQNmag.obj" />
+    <Object Include="obj\iqmath\IQNmpy.obj" />
+    <Object Include="obj\iqmath\IQNmpyI32frac.obj" />
+    <Object Include="obj\iqmath\IQNmpyI32int.obj" />
+    <Object Include="obj\iqmath\IQNmpyIQx.obj" />
+    <Object Include="obj\iqmath\IQNpow.obj" />
+    <Object Include="obj\iqmath\IQNrmpy.obj" />
+    <Object Include="obj\iqmath\IQNrsmpy.obj" />
+    <Object Include="obj\iqmath\IQNsat.obj" />
+    <Object Include="obj\iqmath\IQNsin.obj" />
+    <Object Include="obj\iqmath\IQNsinPU.obj" />
+    <Object Include="obj\iqmath\IQNsqrt.obj" />
+    <Object Include="obj\iqmath\IQNtoF.obj" />
+    <Object Include="obj\vlib\vlib_bhattacharyadistance_u32_i.obj" />
+    <Object Include="obj\vlib\vlib_convertuyvyint_to_hslpl_i.obj" />
+    <Object Include="obj\vlib\vlib_convertuyvyint_to_labpl_i.obj" />
+    <Object Include="obj\vlib\VLIB_convertUYVYint_to_LABpl_LUT_c.obj" />
+    <Object Include="obj\vlib\vlib_convertuyvyint_to_rgbpl_i.obj" />
+    <Object Include="obj\vlib\vlib_convertuyvyint_to_yuv420pl.obj" />
+    <Object Include="obj\vlib\vlib_convertuyvyint_to_yuvpl_i.obj" />
+    <Object Include="obj\vlib\VLIB_convertUYVYpl_to_YUVint_c.obj" />
+    <Object Include="obj\vlib\VLIB_convertUYVYsemipl_to_YUVpl_c.obj" />
+    <Object Include="obj\vlib\vlib_createcclist_i.obj" />
+    <Object Include="obj\vlib\vlib_createccmap8bit_i.obj" />
+    <Object Include="obj\vlib\vlib_dilate_bin_cross_i.obj" />
+    <Object Include="obj\vlib\vlib_dilate_bin_mask_i.obj" />
+    <Object Include="obj\vlib\vlib_dilate_bin_square_i.obj" />
+    <Object Include="obj\vlib\VLIB_disparity_SAD16.obj" />
+    <Object Include="obj\vlib\VLIB_disparity_SAD8.obj" />
+    <Object Include="obj\vlib\VLIB_disparity_SAD_firstRow16.obj" />
+    <Object Include="obj\vlib\VLIB_disparity_SAD_firstRow8.obj" />
+    <Object Include="obj\vlib\vlib_doublethresholding_i.obj" />
+    <Object Include="obj\vlib\vlib_edgerelaxation_i.obj" />
+    <Object Include="obj\vlib\vlib_erode_bin_cross_i.obj" />
+    <Object Include="obj\vlib\vlib_erode_bin_mask_i.obj" />
+    <Object Include="obj\vlib\VLIB_erode_bin_singlePixel_c.obj" />
+    <Object Include="obj\vlib\vlib_erode_bin_square_i.obj" />
+    <Object Include="obj\vlib\vlib_extract8bitbackgrounds16_i.obj" />
+    <Object Include="obj\vlib\vlib_extractlumafromuyuv_i.obj" />
+    <Object Include="obj\vlib\vlib_gauss5x5pyramidkernel_16_i.obj" />
+    <Object Include="obj\vlib\vlib_gauss5x5pyramidkernel_8_i.obj" />
+    <Object Include="obj\vlib\vlib_gradient5x5pyramidkernel_8_i.obj" />
+    <Object Include="obj\vlib\vlib_harrisscore_7x7_i.obj" />
+    <Object Include="obj\vlib\vlib_histogram_1d_init_u16_i.obj" />
+    <Object Include="obj\vlib\vlib_histogram_1d_init_u8_i.obj" />
+    <Object Include="obj\vlib\vlib_histogram_1d_u16_i.obj" />
+    <Object Include="obj\vlib\vlib_histogram_1d_u8_i.obj" />
+    <Object Include="obj\vlib\vlib_histogram_nd_u16_i.obj" />
+    <Object Include="obj\vlib\vlib_houghlinefromlist_c.obj" />
+    <Object Include="obj\vlib\vlib_houghlinefromlist_i.obj" />
+    <Object Include="obj\vlib\vlib_imagepyramid16_i.obj" />
+    <Object Include="obj\vlib\vlib_imagepyramid8_i.obj" />
+    <Object Include="obj\vlib\vlib_initmeanwithlumas16_i.obj" />
+    <Object Include="obj\vlib\vlib_initmeanwithlumas32_i.obj" />
+    <Object Include="obj\vlib\vlib_initvarwithconsts16_i.obj" />
+    <Object Include="obj\vlib\vlib_initvarwithconsts32_i.obj" />
+    <Object Include="obj\vlib\vlib_integralimage16_i.obj" />
+    <Object Include="obj\vlib\vlib_integralimage8_i.obj" />
+    <Object Include="obj\vlib\vlib_kalmanfilter_2x4_correct_i.obj" />
+    <Object Include="obj\vlib\vlib_kalmanfilter_2x4_predict_i.obj" />
+    <Object Include="obj\vlib\vlib_kalmanfilter_4x6_correct_i.obj" />
+    <Object Include="obj\vlib\vlib_kalmanfilter_4x6_predict_i.obj" />
+    <Object Include="obj\vlib\vlib_l1distances16_i.obj" />
+    <Object Include="obj\vlib\vlib_legendremoments_i.obj" />
+    <Object Include="obj\vlib\vlib_legendremoments_init_i.obj" />
+    <Object Include="obj\vlib\vlib_managememory.obj" />
+    <Object Include="obj\vlib\vlib_mask2rle.obj" />
+    <Object Include="obj\vlib\vlib_mixtureofgaussianss16_i.obj" />
+    <Object Include="obj\vlib\vlib_mixtureofgaussianss32_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_replaceweakestcomponent_16_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_replaceweakestcomponent_32_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_sortcomponents_16_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_sortcomponents_32_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_thresholdimage_16_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_thresholdimage_32_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_updatecomponents_16_i.obj" />
+    <Object Include="obj\vlib\vlib_mog_1ch_updatecomponents_32_i.obj" />
+    <Object Include="obj\vlib\vlib_nonmaximumsuppressioncanny_i.obj" />
+    <Object Include="obj\vlib\vlib_nonmaxsuppress_3x3_s16_i.obj" />
+    <Object Include="obj\vlib\vlib_nonmaxsuppress_5x5_s16_i.obj" />
+    <Object Include="obj\vlib\vlib_nonmaxsuppress_7x7_s16_i.obj" />
+    <Object Include="obj\vlib\vlib_normalflow_i.obj" />
+    <Object Include="obj\vlib\vlib_packmask32_i.obj" />
+    <Object Include="obj\vlib\vlib_recursivefilterhoriz1storders16_i.obj" />
+    <Object Include="obj\vlib\vlib_recursivefilterhoriz1storder_i.obj" />
+    <Object Include="obj\vlib\vlib_recursivefiltervert1storders16_i.obj" />
+    <Object Include="obj\vlib\vlib_recursivefiltervert1storder_i.obj" />
+    <Object Include="obj\vlib\vlib_simplex_3d_i.obj" />
+    <Object Include="obj\vlib\vlib_simplex_i.obj" />
+    <Object Include="obj\vlib\vlib_subtractbackgrounds16_i.obj" />
+    <Object Include="obj\vlib\vlib_subtractbackgrounds32_i.obj" />
+    <Object Include="obj\vlib\vlib_testutils.obj" />
+    <Object Include="obj\vlib\vlib_trackfeatureslucaskanade_7x7_i.obj" />
+    <Object Include="obj\vlib\vlib_unpackmask32_i.obj" />
+    <Object Include="obj\vlib\vlib_updateewrmeans16_i.obj" />
+    <Object Include="obj\vlib\vlib_updateewrmeans32_i.obj" />
+    <Object Include="obj\vlib\vlib_updateewrvariances16_i.obj" />
+    <Object Include="obj\vlib\vlib_updateewrvariances32_i.obj" />
+    <Object Include="obj\vlib\vlib_updateuwrmeans16_i.obj" />
+    <Object Include="obj\vlib\vlib_updateuwrvariances16_i.obj" />
+    <Object Include="obj\vlib\vlib_utility.obj" />
+    <Object Include="obj\vlib\vlib_weightedhistogram_1d_u16_c.obj" />
+    <Object Include="obj\vlib\vlib_weightedhistogram_1d_u16_i.obj" />
+    <Object Include="obj\vlib\vlib_weightedhistogram_1d_u8_i.obj" />
+    <Object Include="obj\vlib\vlib_weightedhistogram_nd_u16_i.obj" />
+    <Object Include="obj\vlib\vlib_xygradientsandmagnitude_i.obj" />
+    <Object Include="obj\vlib\vlib_xygradientsandmagnitude_iold.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

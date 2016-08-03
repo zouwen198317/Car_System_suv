@@ -1,0 +1,2 @@
+This folder includes the OBJs generated when building the IQmath_pc.lib using MSFT VC++. The library has been generated using MSFT VC++ version 6.0. There have been issues reported when linking the library with MSFT VC++ version other than the one with which the library was created. To work around the problem, this folder provides the obj files for all the source files that are includes in the IQmath_pc.lib.
+Please use the obj files with your project if you face issues in using the IQmath_pc.lib.
